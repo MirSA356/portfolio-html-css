@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">NASEEM AHMED</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero/Home Section -->
+    <section id="home" class="hero">
+        <img src="/images/MIR SA.jpg" alt="Hero Image" class="hero-image">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm [Naseem Ahmed], a passionate developer.</p>
+        <br>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="/images/MIR SA.jpg" alt="About Me Image" class="about-image">
+            <p>
+                Hello! I'm a web developer specializing in creating responsive and user-friendly websites. 
+                I have experience with HTML, CSS, JavaScript, and other technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="/images/portfoliopic.png" alt="Project 1 Image" class="project-image">
+                <h3>Project 1</h3>
+                <p>"Designed a visually stunning portfolio from scratch using HTML and CSS, showcasing my skills and creativity in web development.".</p>
+            </div>
+            <div class="project-card">
+                <img src="/images/amazonpic.jpeg" alt="Project 2 Image" class="project-image">
+                <h3>Project 2</h3>
+                <p>"Developed a functional e-commerce website, replicating Amazon's layout and features, utilizing HTML, CSS, and other web development technologies.".</p>
+            </div>
+            <div class="project-card">
+                <img src="/images/panacloudpic.png" alt="Project 3 Image" class="project-image">
+                <h3>Project 3</h3>
+                <p>"Successfully cloned the Panacloud website, meticulously replicating its design, layout, and functionality using HTML, CSS, and other web development tools.".</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Naseem Ahmed. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
