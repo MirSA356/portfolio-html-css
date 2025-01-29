@@ -30,6 +30,7 @@ header {
     padding: 0 20px;
 }
 
+/* Responsive Navbar */
 .nav-links {
     list-style: none;
     display: flex;
@@ -43,6 +44,36 @@ header {
 
 .nav-links a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /* Hero Section */
@@ -96,6 +127,14 @@ header {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Responsive About Section */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /* Projects Section */
@@ -186,5 +225,14 @@ footer {
 
     .hero {
         padding: 2rem 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
     }
 }
